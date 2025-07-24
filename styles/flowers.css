@@ -1,5 +1,11 @@
 
- 
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
  
 
@@ -23,8 +29,8 @@
     align-items: center;
     padding: 20px;
     margin-top: 30px;
-    margin-left: 120px;
-    margin-right: 140px;
+    /* margin-left: 120px; */
+    /* margin-right: 0px; */
     max-width: 1140px;
 }
 
@@ -45,8 +51,8 @@
   /* padding: 60px 80px; */
   flex-wrap: wrap;
   max-width: 1140px;
-   margin-left: 140px;
-    margin-right: 140px;
+   /* margin-left: 140px;
+    margin-right: 140px; */
     margin-top: 120px;
 }
 
@@ -87,10 +93,10 @@
 .plants {
   
   text-align: center;
-  padding: 60px 20px;
-    margin-left: 100px;
-    margin-right: 140px; 
-  max-width: 1140px;
+  /* padding: 60px 20px; */
+    /* margin-left: 100px;
+    margin-right: 140px;  */
+  /* max-width: 1140px; */
   /* background-color: #f7f9fc; */
 }
 
@@ -147,14 +153,14 @@
   padding: 10px;
   border: none;
   width: 100%;
-  border-radius: 4px;
+  /* border-radius: 4px; */
   cursor: pointer;
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
 
 .cart-btn:hover {
-  background-color: #c65819;
+  background-color: greenyellow;
 }
 
 /* Responsive for small screens */
@@ -174,3 +180,162 @@
     font-size: 0.9rem;
   }
 } */
+
+.challenge {
+  display: flex;
+  gap: 60px;
+  width: 100%;
+  /* align-items: stretch; */
+  /* background-color: #f2f6fb; */
+ /* padding: 60px 20px; */
+    /* margin-left: 130px;
+    margin-top: 210px; */
+    /* margin-right: 140px;  */
+  /* max-width: 1140px; */
+
+}
+
+.challenge .left img {
+  width: 540px;
+ height: 597px;
+  border-radius: 8px;
+}
+
+.challenge .right {
+  flex: 1;
+  /* position: relative; */
+  width: 540px;
+  height: 521px;
+}
+
+.challenge .right .badge {
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+}
+
+/* .challenge .right h2 {
+  font-size: 24px; 
+  margin-bottom: 20px;
+}  */
+
+/* .challenge .right ul {
+  list-style-type: disc;
+  padding-left: 20px;
+} */
+
+/* .challenge .right li {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  width: 540px;
+  height: 107px;
+  color: #555;
+} */
+
+.right-list {
+ width: 540px;
+ height: 107px;
+ display: block;
+
+} 
+.right  {
+  margin-top: -28px;
+  margin-bottom: 38px;
+  /* width: 540px;
+  height: 520px; */
+  position: relative;
+}
+
+.right-list p {
+  text-align: left;
+  max-width: 400px;
+  margin: 0 0 16px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+
+section.latest-deals {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section.latest-deals h2 {
+  font-size: 49px;
+  margin-bottom: 10px;
+}
+
+section.latest-deals h2 span {
+  color: orange;
+}
+
+section.latest-deals p {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #555;
+  font-size: 14px;
+}
+
+.deal-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.small-group {
+  display: grid;
+  gap: 20px;
+}
+
+.deal {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+
+.big {
+  grid-row: span 2;
+  height: 420px;
+}
+
+.deal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+
+.deal .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+.info h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.info a {
+  padding: 6px 14px;
+  /* background-color: orange; */
+  color: white;
+  /* text-decoration: none; */
+  font-size: 13px;
+  border-radius: 3px;
+}
