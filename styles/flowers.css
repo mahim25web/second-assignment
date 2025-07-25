@@ -342,7 +342,7 @@ section.latest-deals p {
 .content {
   position: relative;
   z-index: 1;
-  /* max-width: 800px; */
+  max-width: 800px;
   width: 90%;
 }
 
@@ -684,6 +684,7 @@ footer {
   .content {
     width: 100%;
     max-width: 100%;
+    margin-bottom: 40px;
   }
 
   .content h1 {
@@ -692,10 +693,10 @@ footer {
   }
 
   .form {
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     max-width: 100%;
-    gap: 12px;
+    /* gap: 12px; */
   }
 
   .form input[type="email"] {
@@ -705,7 +706,7 @@ footer {
   }
 
   .form button {
-    width: 100%;
+    width: 100px;
     padding: 12px;
     font-size: 1rem;
 }
