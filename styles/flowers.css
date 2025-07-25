@@ -444,8 +444,10 @@ footer {
   gap: 24px;
   height: 36px;
   width: 36px;
-  align-items: center;
+  /* align-items: center; */
   margin-bottom: 300px;
+ margin-right: 36px;
+ 
 }
 
 .footer-social img {
